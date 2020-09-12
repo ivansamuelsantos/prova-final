@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="utf-8">
+    <link href="./bootstrap.css" rel="stylesheet">
+    <title>Prova Final</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Alunos</h1>
+        <form class="row">
+            <div class="col-12">
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome" class="form-control" style="margin-bottom: 20px;" />
+            </div>
+            <div class="col-12">
+                <label>Data de Nascimento:</label>
+                <input type="date" name="data-nasc" id="data-nasc" class="form-control" style="margin-bottom: 20px;" />
+            </div>
+            <div class="col-12">
+                <label>Ano Que Está Cursando:</label>
+                <input type="number" name="ano" id="ano" min="0" class="form-control" style="margin-bottom: 20px;" />
+            </div>
+            <div class="col-12">
+                <label>Matéria Favorita:</label>
+                <input type="text" name="materia" id="materia" class="form-control" style="margin-bottom: 20px;" />
+            </div>
+            <div class="col-12">
+                <button type="button" class="btn btn-primary" onclick="submeter()">Cadastrar</button>
+                <button type="button" class="btn btn-secondary" onclick="limpar()">Limpar</button>
+            </div>
+        </form>
+        <br/>
+        <table class="table table-striped">
+            <colgroup>
+                <col width="200">
+                <col width="200">
+                <col width="100">
+                <col width="100">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Matéria Favotira</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nome A</td>
+                    <td>Programação C#</td>
+                    <td><button class="btn btn-warning">Editar</button></td>
+                    <td><button class="btn btn-danger">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Nome B</td>
+                    <td>Programação C++</td>
+                    <td><button class="btn btn-warning">Editar</button></td>
+                    <td><button class="btn btn-danger">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Nome C</td>
+                    <td>Programação React</td>
+                    <td><button class="btn btn-warning">Editar</button></td>
+                    <td><button class="btn btn-danger">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Nome D</td>
+                    <td>Programação Delphi</td>
+                    <td><button class="btn btn-warning">Editar</button></td>
+                    <td><button class="btn btn-danger">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Nome E</td>
+                    <td>Programação Phyton</td>
+                    <td><button class="btn btn-warning">Editar</button></td>
+                    <td><button class="btn btn-danger">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Nome F</td>
+                    <td>Programação PHP</td>
+                    <td><button class="btn btn-warning">Editar</button></td>
+                    <td><button class="btn btn-danger">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Nome G</td>
+                    <td>Programação React-Native</td>
+                    <td><button class="btn btn-warning">Editar</button></td>
+                    <td><button class="btn btn-danger">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Nome H</td>
+                    <td>Programação Flutter</td>
+                    <td><button class="btn btn-warning">Editar</button></td>
+                    <td><button class="btn btn-danger">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Nome I</td>
+                    <td>Programação C</td>
+                    <td><button class="btn btn-warning">Editar</button></td>
+                    <td><button class="btn btn-danger">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Nome J</td>
+                    <td>Programação PL/SQL</td>
+                    <td><button class="btn btn-warning">Editar</button></td>
+                    <td><button class="btn btn-danger">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Nome K</td>
+                    <td>Programação Visual Basic</td>
+                    <td><button class="btn btn-warning">Editar</button></td>
+                    <td><button class="btn btn-danger">Excluir</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="./scripts.js"></script>
+</body>
